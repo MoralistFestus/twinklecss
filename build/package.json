@@ -1,1 +1,23 @@
-
+{
+  "name": "twinkle-css",
+  "description": "A progressive and responsive minimalist UI CSS Framework",
+  "version": "0.1.0",
+  "keywords": [
+    "css",
+    "twinklecss",
+    "css framework",
+    "progressive",
+    "responsive"
+    "minimalist"
+  ],
+  "scripts": {
+    "cook": ""
+  },
+  "repository": "https://github.com/programmerFestus/twinkle-css",
+  "author": "Moralist Festus <moralistfestus.epizy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "",
+    "prismjs": ""
+  }
+}
