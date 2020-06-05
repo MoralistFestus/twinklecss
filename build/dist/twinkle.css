@@ -1,1 +1,1081 @@
+  /*
+   * Twinkle css v0.1.1 (http://)
+   * Copyright 2020 Twitter, Inc.
+   * Licensed under MIT (https://github.com/programmerFestus/twinklecss/build/LICENSE)
+   */
+  
+  /* Google Fonts fonts.google.com */
+  
+  @import url("https://fonts.googleapis.com/css?family=Lora");
+ 
+ /******* Basic Styling ******/
+ 
+  /* html 
+  */
+  html {
+    font-family: sans-serif;
+  
+    line-height: 1.15;
+  
+    -ms-text-size-adjust: 100%;
+  
+    -webkit-text-size-adjust: 100%;
+    
+    -webkit-box-sizing: border-box;
+    
+     box-sizing: border-box;
+    
+  }
+    *,*::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+  /* body 
+  */
+  
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-weight: 400;
+    background: #fff;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+    @font-face {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      src: url(https://fonts.googleapis.com/css?family=Lora);
+  }
+  
+  article, aside, footer, header, main, figcaption, summary, nav, section {
+    display: block;
+  }
+  
+  
+  figure {
+    margin: 1em 40px;
+  }
+  
+  
+  hr {
+    box-sizing: content-box;
+  
+    height: 0;
+  
+    overflow: visible;
+  }
+  
+  
+  pre {
+    font-family: monospace, monospace;
+  
+    font-size: 1em;
+  }
+  
+  /* a href style */
+  a {
+    text-decoration: transparent; /* none; */
+    -webkit-text-decoration-skip: objects;
+  }
+  /* heading h1 - h6 */ 
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  a:active,
+  a:hover {
+    outline-width: 0;
+  }
+  
+  /* abbreviate */
+  
+  abbr[title] {
+    border-bottom: none;
+  
+    text-decoration: underline;
+  
+    text-decoration: underline dotted;
+  }
+  
+  /* bold, strong */
+  
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+  
+    font-size: 1em;
+  }
+  
+  
+  dfn {
+    font-style: italic;
+  }
+  
+  
+  mark {
+    background-color: #ff0;
+    color: #000;
+  }
+  
+  
+  small {
+    font-size: 80%;
+  }
+  
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+  }
+  
+  ol,
+  ul,
+  dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  ol ol,
+  ul ul,
+  ol ul,
+  ul ol {
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  abbr[title],
+  abbr[data-original-title] {
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 0;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+  }
+  
 
+  audio,
+  video {
+    display: inline-block;
+  }
+  
+  
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  
+  
+  img {
+    border-style: none;
+  }
+  
+  /* round image 
+  */
+   
+  .img-round .img-round-tick {
+    border-radius: 50%;
+    border-color: #fff;
+  }
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+    font-size: 100%;
+  
+    line-height: 1.15;
+  
+    margin: 0;
+  }
+  button,
+  input {
+    overflow: visible;
+  }
+  button {
+    color: #fff;
+    
+  }
+  
+  /* default button styles
+  */
+  .twi-button {
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+
+/* default button media query
+*/
+  /* @media query */
+  @media (prefers-reduced-motion: reduce) {
+ .twi-button {
+   transition: none;
+ }
+  }
+/* hover element */
+  .twi-button:hover {
+ color: #212529;
+ text-decoration: none;
+  }
+  
+  .twi-button:focus,
+  .twi-button.focus {
+ outline: 0;
+ box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .twi-button.disabled,
+  .twi-button:disabled {
+ opacity: 0.65;
+  }
+  
+  a.twi-button.disabled,
+  fieldset:disabled a.button {
+ pointer-events: none;
+  }
+  
+  /* background color properties
+  */
+  .bg-dark {
+    background: #202020; /* dark */
+  }.bg-danger {
+     background-color: #ff3300
+  }.bg-success {
+    background-color: #66ff33;
+  }.bg-sky {
+    background: #66ccff;
+  }.bg-warning {
+    background: #FF4500;
+  }.bg-apple {
+    background-color: #66ff66;
+  }.bg-default {
+    background: #f9f9f9;
+  }
+  
+  .twi-code {
+  background-color: #505050;
+  border: 2px solid #C3C3C3;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  float: center;
+  margin: 10px;
+}
+
+  /* container property 
+  */
+  .twi-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px 16px !important; /* default padding for container */
+  }
+  
+  .twi-container-full {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px
+    padding: 8px 16px !important; /* default padding for full container */
+  }
+  
+  .twi-container * {
+    box-sizing: border-box
+  }
+  
+  .round-small {
+    border-radius: 2px
+  }
+  
+  .round,
+  .round-medium {
+    border-radius: 4px
+  }
+  
+  .round-large {
+    border-radius: 8px
+  }
+  
+  .round-xlarge {
+    border-radius: 16px
+  }
+  
+  .round-xxlarge {
+    border-radius: 32px
+  }
+  
+  .padding-small {
+    padding: 4px 8px !important
+  }
+  
+  .padding {
+    padding: 8px 16px !important
+  }
+  
+  .padding-large {
+    padding: 12px 24px !important
+  }
+  
+  .padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+  }
+  
+  .padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+  }
+  
+  .padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+  }
+  
+  .padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+  }
+  
+  .padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+  }
+  
+   /* remove padding element 
+   */
+   .no-padding {
+     padding: 0 !important;
+   }
+   
+   /* set border element to 0
+   */
+   .border-0 {
+     border: 0 !important
+   }
+   
+  /*************
+  **************
+  Border Utilities
+  ***************
+  **************/
+  
+   .border {
+     border: 1px solid #ccc !important
+   }
+  
+   .border-top {
+     border-top: 1px solid #ccc !important
+   }
+  
+   .border-bottom {
+     border-bottom: 1px solid #ccc !important
+   }
+  
+   .border-left {
+     border-left: 1px solid #ccc !important
+   }
+   
+   .border-right {
+     border-right: 1px solid #ccc !important
+   }
+   
+   /***************
+   ****************
+   Panel Utilities for
+   blockquotes Element or bars
+   ****************
+   ***************/
+   
+  
+   .top-panel {
+     border-top: 10px solid #ccc !important
+   }
+  
+   .bottom-panel {
+     border-bottom: 10px solid #ccc !important
+   }
+  
+   .left-panel {
+     border-left: 10px solid #ccc !important
+   }
+  
+   .right-panel{
+     border-right: 10px solid #ccc !important
+   }
+   
+   /* Default blockquote property
+   */ 
+   blockquote {
+     background: #f9f9f9;
+     border-left: 10px solid #ccc;
+     margin: 1.5em 10px;
+     padding: 0.5em 10px;
+     quotes: "\201C""\201D""\2018""\2019";
+   }
+   
+   blockquote:before {
+     color: #ccc;
+     content: open-quote;
+     font-size: 4em;
+     line-height: 0.1em;
+     margin-right: 0.25em;
+     vertical-align: -0.4em;
+   }
+   
+   blockquote p {
+     display: inline;
+   }
+   
+   /* blockquote element ends
+   */
+   
+
+   /* button color property */
+  .twi-btn-success {
+    color: #fff;
+    background-color: #66ff33; /* green */
+  }
+  .twi-btn-danger {
+    color: #fff;
+    background-color: #ff3300; /* red */
+  }
+  .twi-btn-dark {
+    color: #fff;
+    background: #202020; /* dark */
+  }
+  .twi-btn-default {
+    color: #fff;
+    background: #686868; /* grey */
+  }
+  .twi-btn-sky {
+    color: #fff;
+    background: #66ccff; /* skyblue */
+  }
+  .twi-btn-water {
+    color: #fff;
+    background-color: transparent; /* transparent */
+    
+  }
+  .twi-btn-apple {
+    color: #fff;
+    background-color: #66ff66; /* green */
+  }
+  .twi-btn-warning {
+    color: #fff;
+    background: #FF4500; /* orangered */
+  }
+  
+  /*legend */
+  legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+  }
+  
+  /**
+   * 1. Add the correct display in IE 9-.
+   * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  progress {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE.
+   */
+  textarea {
+    overflow: auto;
+  }
+  
+  /*******************
+    Utility Classes
+  *******************/
+  .hide {
+    display: none !important;
+  }
+  
+  .left-align {
+    text-align: left;
+  }
+  
+  .right-align {
+    text-align: right;
+  }
+  
+  .center,
+  .center-align {
+    text-align: center;
+  }
+  
+  .float-left {
+    float: left !important;
+  }
+  
+  .float-right {
+    float: right !important;
+  }
+  
+  .float-center {
+    float: center !important;
+  }
+  
+  .no-select,
+  input[type=range],
+  input[type=range]+.thumb {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set border radius element to 50% */
+  .circle {
+    border-radius: 50%;
+  }
+  
+  /* center block element */
+  .twi-center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  
+  .border {
+    border-style: #333;
+  }
+  .no-border {
+    border: none;
+  }
+  .no-border-top {
+    border-top: none;
+  }
+  .no-border-bottom {
+    border-bottom: none;
+  }
+  .no-border-right {
+    border-right: none;
+  }
+  .no-border-left {
+    border-left: none;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10-.
+   * 2. Remove the padding in IE 10-.
+   */
+  [type="checkbox"],
+  [type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+  [type="search"]::-webkit-search-cancel-button,
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  /*
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in Edge, IE, and Firefox.
+   */
+  details,
+  menu {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  summary {
+    display: list-item;
+  }
+  
+  /* Scripting
+     ========================================================================== */
+  /**
+   * Add the correct display in IE 9-.
+   */
+  canvas {
+    display: inline-block;
+  }
+  
+  /**
+   * Add the correct display in IE.
+   */
+  template {
+    display: none;
+  }
+  
+  /* Hidden
+     ========================================================================== */
+  /**
+   * Add the correct display in IE 10-.
+   */
+  [hidden] {
+    display: none;
+  }
+  
+  /* fix to top */ 
+  .fixed-top,
+  /* fix  to bottom */
+  .fixed-bottom {
+    position: relative;
+  }
+  /* fixed element property */
+  .fixed {
+    position: fixed !important;
+  }
+ 
+
+  
+  /******** Pagination utility ******/
+  .pagination {
+    display: inline-block;
+    padding-left: 0;
+    border-radius: 0.25rem;
+  }
+  .pagination a {
+   color: black;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+   transition: background-color .3s;
+  }
+  .paginate-border a{
+    border: 2px solid #ddd;
+  }
+   .paginate-center {
+    text-align: center;
+   }
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  } .paginate-margin a {
+     margin: 0px 4px;
+     margin-right: px;
+  }
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  /****** breadcrumb pagination *****/
+  ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+   -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+  
+  ul.breadcrumb li {display: inline;}
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {color: green;}
+  
+  
+  /********* 
+     header property
+   *********/
+  .twi-header {
+    padding: 15px;
+    color: #fff;
+  }.twi-header-brand {
+     display: inline-block;
+     padding-top: 0.3125rem;
+     padding-bottom: 0.3125rem;
+     margin-right: 1rem;
+     font-size: 1.25rem;
+     line-height: inherit;
+     white-space: nowrap;
+  }
+  
+  .twi-header {
+   //background-color: #000 !important;
+    border-bottom: 1px solid #C3C3C3;
+    min-height: 55px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+  
+  .twi-header:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  
+  .twi-header.center {
+    text-align: center;
+  }
+  
+  .twi-header .twi-logo {
+    display: block;
+    float: none;
+  }
+  
+  /***********
+  footer property
+  ************/
+  
+  .twi-footer {
+    padding-top: 20px;
+    color: #fff;
+
+  }
+  
+  .twi-footer .footer-copyright {
+    overflow: hidden;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
+  }
+  
+  /* Text Inputs + Textarea
+     ========================================================================== */
+  /* Style Placeholders */
+  ::-webkit-input-placeholder {
+    color: #d1d1d1;
+  }
+  
+  ::-moz-placeholder {
+    color: #d1d1d1;
+  }
+  
+  :-ms-input-placeholder {
+    color: #d1d1d1;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #d1d1d1;
+  }
+  
+  ::placeholder {
+    color: #d1d1d1;
+  }
+  
+  /* Text inputs */
+  input:not([type]),
+  input[type=text]:not(.browser-default),
+  input[type=password]:not(.browser-default),
+  input[type=email]:not(.browser-default),
+  input[type=url]:not(.browser-default),
+  input[type=time]:not(.browser-default),
+  input[type=date]:not(.browser-default),
+  input[type=datetime]:not(.browser-default),
+  input[type=datetime-local]:not(.browser-default),
+  input[type=tel]:not(.browser-default),
+  input[type=number]:not(.browser-default),
+  input[type=search]:not(.browser-default),
+  textarea.materialize-textarea {
+    background-color: transparent;
+    border-radius: 3px;
+    outline: none;
+    height: 2rem;
+    width: 90%;
+    font-size: 16px;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+  }
+  
+  
+  .twi-border-amber,
+  .-hover-border-amber:hover {
+    border-color: #ffc107 !important
+  }
+  
+  .twi-border-aqua,
+  .twi-hover-border-aqua:hover {
+    border-color: #00ffff !important
+  }
+  
+  .twi-border-blue,
+  .twi-hover-border-blue:hover {
+    border-color: #2196F3 !important
+  }
+  
+  .twi-border-light-blue,
+  .twi-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+  }
+  
+  .twi-border-brown,
+  .twi-hover-border-brown:hover {
+    border-color: #795548 !important
+  }
+  
+  .twi-border-cyan,
+  .twi-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+  }
+  
+  .twi-border-blue-grey,
+  .twi-hover-border-blue-grey:hover,
+  .twi-border-blue-gray,
+  .twi-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+  }
+  
+  .twi-border-green,
+  .twi-hover-border-green:hover {
+    border-color: #4CAF50 !important
+  }
+  
+  .twi-border-light-green,
+  .twi-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+  }
+  
+  .twi-border-indigo,
+  .twi-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+  }
+  
+  .twi-border-khaki,
+  .twi-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+  }
+  
+  .twi-border-lime,
+  .twi-hover-border-lime:hover {
+    border-color: #cddc39 !important
+  }
+  
+  .twi-border-orange,
+  .twi-hover-border-orange:hover {
+    border-color: #ff9800 !important
+  }
+  
+  .twi-border-deep-orange,
+  .twi-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+  }
+  
+  .twi-border-pink,
+  .twi-hover-border-pink:hover {
+    border-color: #e91e63 !important
+  }
+  
+  .twi-border-purple,
+  .twi-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+  }
+  
+  .twi-border-deep-purple,
+  .twi-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+  }
+  
+  .twi-border-red,
+  .twi-hover-border-red:hover {
+    border-color: #f44336 !important
+  }
+  
+  .twi-border-sand,
+  .twi-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+  }
+  
+  .twi-border-teal,
+  .twi-hover-border-teal:hover {
+    border-color: #009688 !important
+  }
+  
+  .twi-border-yellow,
+  .twi-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+  }
+  
+  .twi-border-white,
+  .twi-hover-border-white:hover {
+    border-color: #fff !important
+  }
+  
+  .twi-border-black,
+  .twi-hover-border-black:hover {
+    border-color: #000 !important
+  }
+  
+  .twi-border-grey,
+  .twi-hover-border-grey:hover,
+  .twi-border-gray,
+  .twi-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+  }
+  
+  .twi-border-light-grey,
+  .twi-hover-border-light-grey:hover,
+  .twi-border-light-gray,
+  .twi-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+  }
+  
+  .twi-border-dark-grey,
+  .twi-hover-border-dark-grey:hover,
+  .twi-border-dark-gray,
+  .twi-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+  }
+  
+  .twi-border-pale-red,
+  .twi-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+  }
+  
+  .twi-border-pale-green,
+  .twi-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+  }
+  
+  .twi-border-pale-yellow,
+  .twi-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+  }
+  
+  .twi-border-pale-blue,
+  .twi-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+  }
